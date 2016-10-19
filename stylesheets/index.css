@@ -1,0 +1,97 @@
+/*************************************************************************************
+ Name:           Gregory James Caldwell Jr. 
+ Email:          Gregory_Caldwell@student.uml.edu or DevilishCrusader@yahoo.com
+ Creation Date:  12/04/2014
+ Summary:        This is the style-sheet for index.html
+ Filename:       index.css
+*************************************************************************************/
+
+/*************************************************************************************
+Modified from css code provided by professor Jesse Heines. 
+*************************************************************************************/
+
+body {
+  background-color: whitesmoke ;   
+}
+
+body p {
+  color: darkcyan ;   
+}
+
+hr {
+  color: darkcyan ;
+  background-color: darkcyan ;
+  width: 80% ;
+  height: 1px ;
+}
+
+/* set font family and font size for entire page */
+body, table {
+  font-family: Verdana, Arial, Helvetica, sans-serif ;
+  font-size: 10pt ;
+}
+
+/* eliminate the space above the main page title and between that title 
+   and the version information that immediately follows it on the next line */
+#maintitle {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+}
+#maintitle + p {
+  margin-top: 0 ;
+}
+
+/* collapse the table borders to achieve the desired effect*/
+#MTGInfo {
+  border-collapse: collapse ;
+}
+
+/* add borders and padding to the table head and body cells */
+#MTGInfo th, #MTGInfo td {
+  border: 1px solid black ;
+  padding: 2px 5px ;
+}
+
+/* reverse video header row */
+#MTGInfo thead tr th {
+  color: white ;
+  background-color: black ;
+}
+
+/* indicate that certain columns are clickable */
+#MTGInfo thead tr th:nth-child(2),
+#MTGInfo thead tr th:nth-child(3),
+#MTGInfo thead tr th:nth-child(4),
+#MTGInfo thead tr th:nth-child(5),
+#MTGInfo thead tr th:nth-child(6),
+#MTGInfo thead tr th:nth-child(7),
+#MTGInfo thead tr th:nth-child(8),
+#MTGInfo thead tr th:nth-child(9) {
+  color: black ;
+  background-color: darkcyan ;
+}
+
+/* handle rollovers on clickable columns */
+#MTGInfo thead tr th:nth-child(2):hover,
+#MTGInfo thead tr th:nth-child(3):hover,
+#MTGInfo thead tr th:nth-child(4):hover,
+#MTGInfo thead tr th:nth-child(5):hover,
+#MTGInfo thead tr th:nth-child(6):hover,
+#MTGInfo thead tr th:nth-child(7):hover,
+#MTGInfo thead tr th:nth-child(8):hover,
+#MTGInfo thead tr th:nth-child(9):hover {
+  cursor: pointer ;
+  color: black ;
+  background-color: yellow ;
+}
+
+/* align all table body cells to the top of their cells*/
+#MTGInfo tbody tr td {
+  vertical-align: top ;
+}
+
+/* center the cells in the 1st and 4th columns of the table */
+#MTGInfo tbody tr td:nth-child(5),
+#MTGInfo tbody tr td:nth-child(6) {
+  text-align: center ;
+}    
